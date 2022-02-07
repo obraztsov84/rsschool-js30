@@ -12,19 +12,20 @@
     <header class="header">
       <nav>
         <ul class="navbar">
-          <li class="navbar-item" data-song="0"><a class="navbar-link" href="#" data-song="0">соловей</a></li>
-          <li class="navbar-item" data-song="1"><a class="navbar-link" href="#" data-song="1">зарянка</a></li>
-          <li class="navbar-item" data-song="2"><a class="navbar-link" href="#" data-song="2">жаворонок</a></li>
-          <li class="navbar-item" data-song="3"><a class="navbar-link" href="#" data-song="3">славка</a></li>
-          <li class="navbar-item" data-song="4"><a class="navbar-link" href="#" data-song="4">дрозд</a></li>
-          <li class="navbar-item" data-song="5"><a class="navbar-link" href="#" data-song="5">звуки леса</a></li>
+          <li class="navbar-item active" data-song="moho"><a class="navbar-link" href="#">мохо</a></li>
+          <li class="navbar-item " data-song="solovey"><a class="navbar-link" href="#">соловей</a></li>
+          <li class="navbar-item" data-song="zarynka"><a class="navbar-link" href="#">зарянка</a></li>
+          <li class="navbar-item" data-song="javoronok"><a class="navbar-link" href="#">жаворонок</a></li>
+          <li class="navbar-item" data-song="slavka"><a class="navbar-link" href="#">славка</a></li>
+          <li class="navbar-item" data-song="drozd"><a class="navbar-link" href="#">дрозд</a></li>
+          <li class="navbar-item" data-song="forest"><a class="navbar-link" href="#">звуки леса</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <div class="player">
-        <p></p>
+        <img class="play-btn" src="img/svg/play.svg" alt="pause-play button">
       </div>
       <h1>Орнитотерапия</h1>
       <p>Ежедневно человек подвергаемся воздействию различных звуков. Все они действуют по-разному. 
@@ -38,6 +39,11 @@
         заметили, что пение птиц имеет положительное влияние на человека. И появилась целая наука, использующая 
         для лечения пернатых – орнитотерапия.</p>
       <p>Какие птицы вам помогут, и при каких заболеваниях?</p>
+      <h3>Чешуегорлый мохо</h3>
+      <p>Если хочется погрустить. Можно услышать пение последнего мохо, которым он пытается привлечь самку, не зная, 
+        что она никогда не придёт, ведь он был последним представителем своего вида. Паузы между его пением нужны, 
+        чтобы пела самка, образовывая дуэт. Запись сделана в 1987 году, в том же году умер последний мохо.</p>
+
       <h3>Соловей</h3>
       <p>При депрессии, головных болях, слабости и хронической усталости помогут его песни. Они довольно сложные, 
         переливчатые, сочетают перепады мягких и резких звуков. Эта птица поёт мастерски! Ведь не зря соловей – 
@@ -71,14 +77,15 @@
 
     <footer class="footer">
       <div class="footer-item">
-        <a class="logo" href="https://github.com/obraztsov84"><img src="img/Logos/github.svg" width ="50" height="50" alt="github-logo"/></a>
+        <a class="logo" href="https://github.com/obraztsov84"><img src="./img/Logos/github.svg" width ="50" height="50" alt="github-logo"/></a>
       </div>
       <div class="footer-item"><p class="footer-date">2022</p></div>
       <div class="footer-item">
-        <a class="logo" href="https://rs.school/js/"><img  src="img/Logos/rsschool.svg" height="50" alt="rsschool-logo"/></a>
+        <a class="logo" href="https://rs.school/js/"><img  src="./img/Logos/rsschool.svg" height="50" alt="rsschool-logo"/></a>
       </div>
     </footer>
   </div>
+  <audio class="audio" src="./audio/moho.mp3"></audio>
   <script src="script.js"></script>
 </body>
 </html>

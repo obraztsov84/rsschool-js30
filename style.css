@@ -24,6 +24,7 @@ main {
 .header {
   position: fixed;
   width: inherit;
+  z-index: 1;
 }
 
 .navbar {
@@ -39,6 +40,8 @@ main {
   padding:  10px 0;
   list-style: none;
   transition: 0.3s;
+
+  border-radius: 5px;
 }
 
 .navbar-item:hover {
@@ -80,6 +83,10 @@ main {
   font-weight: 700;
 }
 
+.logo {
+  transition: 0.3s;
+}
+
 .logo:hover {
   transform: scale(110%, 110%);
 }
@@ -108,11 +115,34 @@ main {
  }
 
 .player {
+  position: relative;
   width: 100%;
   height: 0;
   padding-top:56.2%;
   margin-top: 20px;
   background-size: contain;
-  background-image: url(/img/player-bg1.jpg);
+  background-image: url(./img/player-bg1.jpg);
   background-repeat: no-repeat;
+}
+
+.play-btn {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: calc(50% - 64px);
+  left: calc(50% - 64px);
+  transition: 0.3s;
+}
+
+.play-btn:hover {
+  transform: scale(110%, 110%);
+  cursor: pointer;
+}
+
+.active {
+  background-color: #686868;
+}
+
+.active a {
+  color: #bdae82;
 }
