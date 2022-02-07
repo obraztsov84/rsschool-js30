@@ -5,6 +5,7 @@ console.log('Птицы готовы к вылету')
 let isSongPlaying = false;
 
 let currentSong = "moho";
+let currentBackground = 0;
 
 const audio = document.querySelector(".audio");
 
@@ -15,9 +16,9 @@ console.log(player)
 
 const togglePLayBtn = () => {
   if (isSongPlaying) {
-  isSongPlaying = false;
-  playBtn.src="./img/svg/pause.svg"
-  audio.pause();
+    isSongPlaying = false;
+    playBtn.src="./img/svg/pause.svg"
+    audio.pause();
   } else {
     isSongPlaying = true;
     playBtn.src="./img/svg/play.svg"
@@ -26,13 +27,14 @@ const togglePLayBtn = () => {
 }
 
 const backgroundChange = () => {
-  const random = Math.floor(Math.random() * 8);
+  const random = Math.floor(Math.random() * 10);
+  currentBackground===random?backgroundChange():currentBackground=random;
   player.style.backgroundImage = `url(./img/player-bg${random}.jpg)`
   console.log(`./img/player-bg${random}.jpg`)
 }
 
+player.addEventListener('click', backgroundChange)
 playBtn.addEventListener('click', ()=>{togglePLayBtn()})
-
 
 const btns = document.querySelectorAll(".navbar-item");
 
@@ -54,14 +56,13 @@ const selectSong = (e) => {
     audio.play();
     isSongPlaying = true;
     playBtn.src="./img/svg/play.svg"
-    backgroundChange()
+    backgroundChange();
+    console.log(songSrc)
   } else {
     eventElement.classList.add("active");
     togglePLayBtn();
   }
 }
-
-
 
 btns.forEach(item => {
   item.addEventListener('click', (e) => {
