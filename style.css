@@ -14,6 +14,10 @@ main {
   padding: 50px 30px 0;
 }
 
+body {
+  background-color:#525252;
+}
+
 .container {
   width: 1000px;
 
