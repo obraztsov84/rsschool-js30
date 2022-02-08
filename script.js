@@ -17,11 +17,11 @@ console.log(player)
 const togglePLayBtn = () => {
   if (isSongPlaying) {
     isSongPlaying = false;
-    playBtn.src="./img/svg/pause.svg"
+    playBtn.src="./img/svg/play.svg"
     audio.pause();
   } else {
     isSongPlaying = true;
-    playBtn.src="./img/svg/play.svg"
+    playBtn.src="./img/svg/pause.svg"
     audio.play();
   }
 }
